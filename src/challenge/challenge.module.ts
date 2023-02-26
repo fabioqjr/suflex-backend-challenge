@@ -1,9 +1,12 @@
 import { Module } from '@nestjs/common';
+import { ChallengeController } from './challenge.controller';
+import { ChallengeService } from './challenge.service';
+import { PrismaModule } from '../prisma/prisma.module';
 
 @Module({
-  imports: [],
-  controllers: [],
-  providers: [],
+  imports: [PrismaModule],
+  controllers: [ChallengeController],
+  providers: [ChallengeService],
   exports: [],
 })
 export class ChallengeModule {}
