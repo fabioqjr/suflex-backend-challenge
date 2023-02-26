@@ -1,7 +1,7 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
 import { readFileSync } from 'fs';
 import { parse } from 'papaparse';
-import { PrismaService } from 'src/prisma/prisma.service';
+import { PrismaService } from '../prisma/prisma.service';
 import { ChallengeProductDTO } from './dto/challenge-product.dto';
 
 @Injectable()
